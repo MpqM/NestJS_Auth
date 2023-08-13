@@ -40,8 +40,10 @@ npm run test:cov
 #### ⚪ Description 
 * ##### 유저, 인증 모듈, 가드
  <img src="https://user-images.githubusercontent.com/79093184/260308537-aac00cd7-70ee-4eb0-8766-f9ee3ed25ce3.jpg"/>
+ 
 * ##### 페스포트와 세션을 사용한 인증 과정
  <img src="https://user-images.githubusercontent.com/79093184/260308564-32bb67d8-0b7e-4e91-8165-cb7a748dafdb.jpg"/>
+ 
 * ##### 로그인부터 세션 저장까지 순서도
   <img src="https://user-images.githubusercontent.com/79093184/260308565-76d9f827-f9cb-458d-8568-d99beccb1305.jpg"/>
 

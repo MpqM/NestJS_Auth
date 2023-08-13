@@ -1,4 +1,4 @@
-# Blog
+# Auth
 #### ⚪ About Project
 * ##### NestJS로 쿠키, 세션을 이용해 인증기능 구현
 * ##### 유저생성, 조회, 전체조회, 수정, 삭제, 전체삭제기능 API, Sqlite DB를 이용

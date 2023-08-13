@@ -1,7 +1,8 @@
 # Blog
 #### ⚪ About Project
-* ##### NestJS로 웹API 만들기, 의존성 주입, 몽고DB 연동하기 연습
-* ##### Blog글 객체에 대한 생성, 조회, 전체조회, 수정, 삭제, 전체삭제기능 API
+* ##### NestJS로 쿠키, 세션을 이용해 인증기능 구현
+* ##### 유저생성, 조회, 전체조회, 수정, 삭제, 전체삭제기능 API, Sqlite DB를 이용
+* ##### 쿠키, 세션 및 유효성검증(Validataion Pipe, Guard, class-validator), PassPort(Strategy, Session Serializer)를 통한 인증 구현
 
 * * *
 #### ⚪ Usage

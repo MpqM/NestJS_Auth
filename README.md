@@ -51,8 +51,7 @@ npm run test:cov
 #### ⚪ Roadmap & Realization & Study
 * ##### 회원가입, 쿠키를 통한 로그인, Guard를 통한 핸들러 메서드에 전달전 검증
 * ##### 세션과 PassPort를 이용한 인증 과정
-* ##### 파이프를 통한 유효성 검증, SQLite 간단 사용,
-* ##### 
+* ##### 파이프를 통한 유효성 검증, SQLite 간단 사용
 
 * * *
 #### ⚪ Writer

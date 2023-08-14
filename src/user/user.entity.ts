@@ -11,9 +11,12 @@ export class User {
   @Column({ unique: true }) // 유니크 제약 조건이 있는 컬럼으로 정의
   email: string; // 이메일
 
-  @Column() // 컬럼으로 정의
-  password: string; // 비밀번호
-
   @Column({ type: 'datetime', default: () => 'CURRENT_TIMESTAMP' }) // 컬럼으로 정의, 기본값 설정
   createdDt: Date = new Date(); // 생성 일시, 기본값으로 현재 시간을 사용
+
+  @Column({ nullable: true }) // 컬럼으로 정의, 널값 허용
+  password: string; // 비밀번호
+
+  @Column({ nullable: true }) // 컬럼으로 정의, 널값 허용
+  providerId: string; // Google OAuth providerId
 }

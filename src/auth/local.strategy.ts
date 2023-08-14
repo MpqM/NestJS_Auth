@@ -11,7 +11,7 @@ export class LocalStrategy extends PassportStrategy(Strategy) {
 
   // 사용자 유효성 검사를 위한 메서드
   async validate(email: string, password: string): Promise<any> {
-    const user = await this.authService.validateUser(email, password); // 사용자 유효성 검사
+    const user = await this.authService.validateUser(email, password); // 유효성 검사
     if (!user) {
       return null; // 사용자가 없을 경우 null 반환
     }

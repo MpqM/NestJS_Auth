@@ -7,13 +7,8 @@ import * as passport from 'passport';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule); // AppModule을 기반으로 애플리케이션 인스턴스 생성
-
-  // 전역 파이프 설정 (유효성 검사 파이프)
-  app.useGlobalPipes(new ValidationPipe());
-
-  // cookieParser 미들웨어 추가
-  app.use(cookieParser());
-
+  app.useGlobalPipes(new ValidationPipe()); // 전역 파이프 설정 (유효성 검사 파이프)
+  app.use(cookieParser()); // cookieParser 미들웨어 추가
   // express-session 미들웨어 추가
   app.use(
     session({
@@ -23,12 +18,8 @@ async function bootstrap() {
       cookie: { maxAge: 360000 }, // 세션 쿠키 설정 (유효 기간)
     }),
   );
-
-  // passport 초기화 및 세션 설정
-  app.use(passport.initialize());
-  app.use(passport.session());
-
+  app.use(passport.initialize()); // passport 초기화
+  app.use(passport.session()); // passport 세션 설정
   await app.listen(3000); // 애플리케이션을 3000 포트로 실행
 }
-
 bootstrap(); // 애플리케이션 실행

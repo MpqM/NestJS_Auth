@@ -5,6 +5,7 @@ import { UserModule } from './user/user.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { User } from './user/user.entity';
 import { AuthModule } from './auth/auth.module';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { AuthModule } from './auth/auth.module';
     }),
     UserModule, // User 모듈 임포트
     AuthModule, // Auth 모듈 임포트
+    ConfigModule.forRoot(), // .env 설정을 읽어오게 ConfigMoudle 설정
   ],
   controllers: [AppController], // 컨트롤러 등록
   providers: [AppService], // 서비스 등록

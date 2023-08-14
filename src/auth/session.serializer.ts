@@ -13,7 +13,7 @@ export class SessionSerializer extends PassportSerializer {
     done(null, user.email); // 사용자 객체 대신 사용자의 이메일을 세션에 저장
   }
 
-  // 세션에서 사용자 객체를 복원할 때 호출되는 메서드
+  // 사용자 객체를 세션에서 복원할 때 호출되는 메서드
   async deserializeUser(
     payload: any,
     done: (err: Error, payload: any) => void,
@@ -23,6 +23,7 @@ export class SessionSerializer extends PassportSerializer {
       done(new Error('No User'), null); // 사용자가 없을 경우 에러 처리
       return;
     }
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { password, ...userInfo } = user; // 비밀번호 제외한 사용자 정보 추출
     done(null, userInfo); // 복원된 사용자 정보를 세션에 저장
   }

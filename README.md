@@ -59,7 +59,7 @@ http://localhost:3000/auth/testloginsession
   <img src="https://user-images.githubusercontent.com/79093184/260433878-42222a53-f39b-44e5-a01f-acf5b0cb4c2c.png"/>
 * ##### GoogleAuthGuard의 동작 순서도
   <img src="https://user-images.githubusercontent.com/79093184/260433343-a54ea8a5-58d7-442f-8d67-446c4833c1b8.png"/>
-
+* ##### API테스트는 POSTMAN 파일 참조
 * * *
 #### ⚪ Roadmap & Realization & Study
 * ##### 회원가입, 쿠키를 통한 로그인, Guard를 통한 핸들러 메서드에 전달전 검증

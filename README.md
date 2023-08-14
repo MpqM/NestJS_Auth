@@ -38,7 +38,9 @@ npm run test:cov
 ```
 
 * ##### Test Google OAuth
-http://localhost:3000/auth/logingoogle <br />
+http://localhost:3000/auth/logingoogle
+
+
 http://localhost:3000/auth/testloginsession
 
 * * *

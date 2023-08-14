@@ -46,13 +46,19 @@ http://localhost:3000/auth/testloginsession
 * * *
 #### ⚪ Description 
 * ##### 유저, 인증 모듈, 가드
- <img src="https://user-images.githubusercontent.com/79093184/260308537-aac00cd7-70ee-4eb0-8766-f9ee3ed25ce3.jpg"/>
+ <img src="https://user-images.githubusercontent.com/79093184/260433330-d974fbbb-3cd1-4a03-b63f-ec30f30d04ef.png"/>
  
 * ##### 페스포트와 세션을 사용한 인증 과정
- <img src="https://user-images.githubusercontent.com/79093184/260308564-32bb67d8-0b7e-4e91-8165-cb7a748dafdb.jpg"/>
+ <img src="https://user-images.githubusercontent.com/79093184/260433333-0efdf916-ba4b-4483-8176-65ac26e6ae63.png"/>
  
 * ##### 로그인부터 세션 저장까지 순서도
-  <img src="https://user-images.githubusercontent.com/79093184/260308565-76d9f827-f9cb-458d-8568-d99beccb1305.jpg"/>
+  <img src="https://user-images.githubusercontent.com/79093184/260433337-3906a4b4-1789-469d-876e-5776a8e07f53.png"/>
+* ##### OAuth 프로토콜 흐름, 엑세스 토큰 만료시 리프레시 토큰을 통한 재발행
+  <img src="https://user-images.githubusercontent.com/79093184/260433871-291c3293-a00f-44fc-b0ff-dbf7ece1eb3c.png"/>
+* ##### 구글 OAuth 구현 순서
+  <img src="https://user-images.githubusercontent.com/79093184/260433878-42222a53-f39b-44e5-a01f-acf5b0cb4c2c.png"/>\
+* ##### GoogleAuthGuard의 동작 순서도
+  <img src="https://user-images.githubusercontent.com/79093184/260433343-a54ea8a5-58d7-442f-8d67-446c4833c1b8.png"/>\
 
 * * *
 #### ⚪ Roadmap & Realization & Study
